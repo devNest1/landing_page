@@ -1,126 +1,180 @@
 /* Reset básico */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
   
-  html {
-    font-family: sans-serif;
-    font-size: 1rem;
-    background-color: #fff;
-  }
+html {
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+}
   
-  /* Variáveis corrigidas */
-  :root {
-    --background-color-principal: #F2F2F4;
-    --background-color-secundario: #FF4800;
-    --color-texte-01: #6e6e6e;
-    --color-texte-02: #1F1F2E;
-  }
+/* Variáveis corrigidas */
+:root {
+  --background-color-principal: #F2F2F4;
+  --background-color-secundario: #FF4800;
+  --color-texte-01: #6e6e6e;
+  --color-texte-02: #1F1F2E;
+}
   
-  /* Tipografia destaque */
-  h4,
-  span {
-    color: var(--background-color-secundario);
-  }
+/* Tipografia destaque */
+span {
+  color: var(--background-color-secundario);
+}
   
-  /* Container principal */
-  .quote-container {
-    display: flex;
-    background-color: var(--background-color-principal);
-    padding: 0 10rem;
-    margin: auto;
-    justify-content: center;
-    color: var(--color-texte-01);
-  }
+/* Container principal */
+.quote-container {
+  display: flex;
+  background-color: var(--background-color-principal);
+  padding: 0 10rem;
+  margin: auto;
+  justify-content: center;
+  color: var(--color-texte-01);
+}
   
-  /* Título */
-  .quote-container h2 {
-    color: var(--color-texte-02);
-    padding: 2rem 0;
-  }
+/* Título */
+.quote-container h2 {
+  color: var(--color-texte-02);
+  padding: 2rem 0;
+}
   
-  /* Bloco geral com texto + formulário */
-  .box-quote {
-    display: flex;
-    gap: 3rem;
-    min-height: 60vh;
-    max-width: 100%;
-    margin: auto;
-    flex: 1 1 50%;
-  }
+/* Bloco geral com texto + formulário */
+.box-quote {
+display: flex;
+gap: 3rem;
+min-height: 60vh;
+max-width: 100%;
+margin: auto;
+flex: 1 1 50%;}
   
-  /* Parte do texto */
-  .text-quote {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 3rem;
-  }
+/* Parte do texto */
+.text-quote {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 3rem;
+}
   
-  /* Blocos internos */
-  .box {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
+/* Blocos internos */
+.box {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
-  .text-quote .box .container-box h3 {
-    font-size: 1.5rem;
-  }
+.text-quote .box .container-box h3 {
+  font-size: 1.5rem;
+}
 
-  .text-quote .box .container-box p {
-    padding: 1.3rem 0;
-    color: var(--color-texte-02);
-  }
+.text-quote .box .container-box p {
+  padding: 1.3rem 0;
+  color: var(--color-texte-02);
+}
   
-  /* Estilo da área do formulário */
-  .box-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--background-color-secundario);
-    flex: 1 1 40%;
-  }
+/* Estilo da área do formulário */
+.box-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--background-color-secundario);
+  flex: 1 1 40%;
+}
   
-  /* Formulário */
-  .quote-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    width: 100%;
-    max-width: 400px;
-  }
+/* Formulário */
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+}
   
-  .quote-form input,
-  .quote-form select {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    transition: 0.3s border-color ease;
-  }
+.quote-form input, .quote-form select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: 0.3s border-color ease;
+}
   
-  .quote-form input:focus,
-  .quote-form select:focus {
-    border-color: #000;
-    outline: none;
-  }
+.quote-form input:focus,
+.quote-form select:focus {
+   border-color: #000;
+  outline: none;
+}
   
-  /* Botão personalizado */
-  .btn-quote {
-    background-color: var(--color-texte-02);
-    color: var(--color-texte-01);
-    border-radius: 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
+/* Botão personalizado */
+.btn-quote {
+  background-color: var(--color-texte-02);
+  color: var(--color-texte-01);
+  border-radius: 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
   
-  .btn-quote:hover {
-    background-color: #000;
-    color: #fff;
-  }
+.btn-quote:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Planos */
+.planos {
+  margin: 3rem;
   
+}
+
+.planos .text-planos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.planos .text-planos h4{
+  padding: 2rem;
+}
+
+.planos .container-planos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.planos .container-planos
+.box-planos {
+  background-color: var(--background-color-principal);
+  text-align: center;
+  padding: 1rem 0;
+  height: 18rem;
+  width: 12rem;
+}
+
+.planos .container-planos
+.box-planos h3 {
+  background-color: var(--background-color-secundario);
+  width: 100wv;
+  margin: 2rem 0;
+}
+
+.planos .container-planos
+.box-planos ul li{
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0.5rem;
+  color: var(--color-texte-01);
+}
+
+.btn-plano {
+  padding: 0.5rem;
+  background-color: var(--background-color-secundario);
+  color: var(--background-color-principal);
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+}
