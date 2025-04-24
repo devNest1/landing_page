@@ -26,6 +26,31 @@ span {
 /* Barra de Navegação */
 nav {
   margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo-box .logo img {
+  width: 3.125rem;
+}
+
+nav .navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+nav .navbar ul li a {
+  text-decoration: none;
+  padding: 1.25rem;
+  color: var(--color-texte-02);
+  transition: all 0.3s ease;
+}
+
+nav .navbar ul li a:hover {
+  background-color: var(--background-color-secundario);
+  color: var(--background-color-principal);
+  
 }
   
 /* Seção quote */
