@@ -11,7 +11,6 @@ html {
   background-color: #fff;
 }
   
-/* Variáveis corrigidas */
 :root {
   --background-color-principal: #F2F2F4;
   --background-color-secundario: #FF4800;
@@ -23,8 +22,38 @@ html {
 span {
   color: var(--background-color-secundario);
 }
+
+/* Barra de Navegação */
+nav {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo-box .logo img {
+  width: 3.125rem;
+}
+
+nav .navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+nav .navbar ul li a {
+  text-decoration: none;
+  padding: 1.25rem;
+  color: var(--color-texte-02);
+  transition: all 0.3s ease;
+}
+
+nav .navbar ul li a:hover {
+  background-color: var(--background-color-secundario);
+  color: var(--background-color-principal);
   
-/* Container principal */
+}
+  
+/* Seção quote */
 .quote-container {
   display: flex;
   background-color: var(--background-color-principal);
@@ -151,7 +180,7 @@ flex: 1 1 50%;}
   background-color: var(--background-color-principal);
   text-align: center;
   padding: 1rem 0;
-  height: 18rem;
+  height: 20rem;
   width: 12rem;
 }
 
@@ -160,6 +189,7 @@ flex: 1 1 50%;}
   background-color: var(--background-color-secundario);
   width: 100wv;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
 .planos .container-planos
