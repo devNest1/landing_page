@@ -25,19 +25,40 @@ span {
 
 /* Barra de Navegação */
 nav {
-  margin: 1rem;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+}
+
+nav .logo-box {
+  display: flex;
+}
+
+nav .logo {
+  display: flex;
+  color: var(--background-color-secundario);
+  align-items: center;
+}
+
+nav .logo-box h3 {
+  font-size: 2rem;
 }
 
 nav .logo-box .logo img {
-  width: 3.125rem;
+  width: 2.125rem;
+  color: #000;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
 }
 
 nav .navbar ul {
   display: flex;
   gap: 2rem;
   list-style-type: none;
+  align-items: center;
 }
 
 nav .navbar ul li a {
@@ -49,10 +70,30 @@ nav .navbar ul li a {
 
 nav .navbar ul li a:hover {
   background-color: var(--background-color-secundario);
+  color: var(--background-color-principal);  
+}
+
+/* Botão Navegação */
+nav .box-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+nav .box-btn .btn-nav {
+  padding: 0.4rem 1rem;
+  background-color: var(--background-color-secundario);
   color: var(--background-color-principal);
-  
+  border: none;
+  cursor: pointer;
 }
   
+nav .box-btn .btn-nav:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 0.5rem 0.2rem var(--cor-07) ;
+}
+
 /* Seção quote */
 .quote-container {
   display: flex;
