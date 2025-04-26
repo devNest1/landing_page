@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="./img/favicon.png" rel="icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>Langind Page</title>
@@ -10,8 +11,8 @@
 <body>
     <nav>
         <div class="logo-box">
-            <img src="./img/truck.png" alt="caminhão">
             <h3 class="logo">
+                <img src="./img/truck.png" alt="caminhão">
                 FASTER
             </h3>
         </div>
@@ -29,7 +30,18 @@
             <button type="button" class="btn-nav">Get A Quote</button>
         </div>
     </nav>
+    <!-- Banner -->
     <header>
+        <div class="banner">
+            <h2>Safe & Faster</h2>
+            <h1>Logistics Services</h1>
+            <form class="tracking-form">
+                <input type="text" placeholder="Tracking Id">
+                <button type="submit">Track & Trace</button>
+            </form>
+             <!-- Conteiner para img de fundo -->
+             <div class="cover"></div>
+        </div>
     </header>
     <main>
         <!-- Seção Quote -->
@@ -113,6 +125,7 @@
                 </article>
             </div>
         </section>
+        <!-- Seção Team -->
         <section>
             <div>
                 <h4><span>DELIVERY TEAM</span></h4>
@@ -149,6 +162,7 @@
                 </div>
             </div>
         </section>
+        <!-- Seção Blog -->
         <section>
             <h4><span>OUR BLOG</span></h4>
             <h2>Latest From Blog</h2>
@@ -164,8 +178,7 @@
                                 <p>John Doe</p>
                             </li>
                             <li>
-                                <img src="" alt="">
-                                <p></p>
+                                <p><i class='bx bx-bookmark' style='color:#ff4800'></i>Web Design</p>
                             </li>
                         </ul>
                     </div>
@@ -185,8 +198,8 @@
                                 <p>John Doe</p>
                             </li>
                             <li>
-                                <img src="" alt="">
-                                <p></p>
+                                
+                                <p><i class='bx bx-bookmark' style='color:#ff4800'></i>Web Design</p>
                             </li>
                         </ul>
                     </div>
@@ -197,6 +210,36 @@
             </div>
         </section>
     </main>
-    <footer>#</footer>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-columns">
+          <div class="get-in-touch">
+            <h4>Get In Touch</h4>
+            <p>123 Street, New York, USA</p>
+            <p>+012 345 67890</p>
+            <p>info@example.com</p>
+          </div>
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Pricing Plan</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter.</p>
+            <input type="email" placeholder="Your Email Address">
+            <button>Sign Up</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span>Your Site Name</span>, All Rights Reserved. Designed by <span>HTML Codex</span></p>
+          <p>Distributed by: <span>ThemeWagon</span></p>
+        </div>
+      </footer>
 </body>
 </html>

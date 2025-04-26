@@ -70,7 +70,7 @@ nav .navbar ul li a {
 
 nav .navbar ul li a:hover {
   background-color: var(--background-color-secundario);
-  color: var(--background-color-principal);  
+  color: var(--background-color-principal);
 }
 
 /* Botão Navegação */
@@ -91,9 +91,86 @@ nav .box-btn .btn-nav {
 nav .box-btn .btn-nav:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 0 0 0.5rem 0.2rem var(--cor-07) ;
+  box-shadow: 0 0 0.5rem 0.2rem var(--cor-07);
 }
 
+/* Estilo do header */
+header {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* ocupa a tela inteira */
+  overflow: hidden;
+}
+
+/* Banner com conteúdo */
+header .banner {
+  position: relative;
+  z-index: 2; /* Fica acima da imagem de fundo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Textos */
+header .banner h2 {
+  font-size: 2rem;
+  color: var(--background-color-secundario);
+  margin-bottom: 10px;
+}
+
+header .banner h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--background-color-principal);
+  margin-bottom: 20px;
+}
+
+/* Formulário de tracking */
+header .tracking-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+header .tracking-form input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+header .tracking-form button {
+  padding: 10px 20px;
+  background-color: var(--background-color-secundario);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header .tracking-form button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 0.5rem 0.2rem var(--cor-07);
+}
+
+/* Cover com imagem de fundo */
+header .banner .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/header.jpg') no-repeat center center/cover;
+  opacity: 0.5; /* Deixa a imagem meio transparente */
+  z-index: -100; /* Fica atrás do conteúdo */
+}
 /* Seção quote */
 .quote-container {
   display: flex;
@@ -248,4 +325,246 @@ flex: 1 1 50%;}
   margin: 1rem;
   border: none;
   cursor: pointer;
+}
+
+/* Seção Team */
+section {
+  padding: 5rem 1.25rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+section h4 span {
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+section .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+section .box-container .box-team {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section .box-container .box-team:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+section .box-container .box-team .img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+section .box-container .box-team h3 {
+  margin: 15px 0 5px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+section .box-container .box-team p {
+  margin-bottom: 15px;
+  color: var(--color-texte-01);
+  font-size: 0.95rem;
+}
+
+/* Seção Blog */
+section {
+  padding: 5rem 1.25rem;
+  text-align: center;
+}
+
+section h4 span {
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--color-texte-02);
+}
+
+section .container-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+section .container-blog article {
+  background-color: var(--background-color-principal);
+  width: 21.875rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+section .container-blog article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}
+
+section .container-blog article .box-img img {
+  width: 100%;
+  height: 13.75rem;
+  object-fit: cover;
+}
+
+section .container-blog article ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 15px;
+  list-style: none;
+}
+
+section .container-blog article ul li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 0.9rem;
+  color: var(--color-texte-02);
+}
+
+section .container-blog article ul li img {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+section .container-blog h3 {
+  font-size: 1.3rem;
+  margin: 0 15px 10px;
+  color: var(--color-texte-02);
+}
+
+section .container-blog p {
+  font-size: 15px;
+  color: var(--color-texte-02);
+  margin: 0 15px 1.25rem;
+  line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--color-texte-02);
+  color: var(--background-color-principal);
+  padding: 3.75rem 1.25rem 1.25rem;
+  font-size: 15px;
+}
+
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Cada coluna do footer */
+footer .footer-columns > div {
+  flex: 1 1 15.625rem;
+}
+
+footer h4 {
+  color: var(--background-color-principal);
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--background-color-secundario);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Informações de contato */
+.get-in-touch p {
+  margin: 8px 0;
+}
+
+/* Links rápidos */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+  color: var(--background-color-principal);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.quick-links ul li a:hover {
+  color: var(--background-color-secundario);
+}
+
+/* Newsletter */
+.newsletter p {
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--background-color-secundario);
+  color: var(--background-color-principal);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #e63900;
+}
+
+/* Parte inferior do footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-texte-02);
+  margin-top: 2.5rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-texte-01);
 }
